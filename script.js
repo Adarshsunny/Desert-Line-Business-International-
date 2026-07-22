@@ -136,6 +136,28 @@ document.addEventListener('DOMContentLoaded', () => {
         startAutoPlay();
     }
 
+    // Touch swipe support for mobile
+    const heroSection = document.querySelector('.hero-carousel');
+    if (heroSection) {
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        heroSection.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+
+        heroSection.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            if (touchStartX - touchEndX > 50) {
+                nextSlide();
+                resetAutoPlay();
+            } else if (touchEndX - touchStartX > 50) {
+                prevSlide();
+                resetAutoPlay();
+            }
+        }, { passive: true });
+    }
+
 
     // ==========================================================================
     // 3. Reveal-on-Scroll Animations (Intersection Observer)
