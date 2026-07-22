@@ -1515,22 +1515,60 @@ a {
 }
 
 /* --------------------------------------------------------------------------
-   12. Responsive Design (Media Queries)
+   12. Comprehensive Responsive Design (All Devices & Viewports)
    -------------------------------------------------------------------------- */
-@media (max-width: 1024px) {
-    /* Fonts scale down */
-    .slide-title {
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+@media (max-width: 1200px) {
+    .section-heading {
         font-size: 3rem;
     }
     .about-title {
-        font-size: 3.5rem;
+        font-size: 3.2rem;
     }
-    .section-heading {
-        font-size: 2.8rem;
-    }
-    
     .products-grid {
         grid-template-columns: repeat(3, 1fr);
+        gap: 1.8rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .section-heading {
+        font-size: 2.6rem;
+    }
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    .about-left {
+        position: relative;
+        top: 0;
+    }
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        text-align: center;
+    }
+    .footer-logo-img {
+        align-self: center;
+    }
+    .footer-col-title::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .developer-credit {
+        justify-content: center;
     }
 }
 
@@ -1549,7 +1587,7 @@ a {
         background-color: var(--bg-light);
         flex-direction: column;
         justify-content: center;
-        gap: 3rem;
+        gap: 2.5rem;
         z-index: 999;
         transform: translateX(100%);
         transition: transform 0.4s ease-in-out;
@@ -1564,10 +1602,11 @@ a {
         display: block;
     }
     
-    /* Hero Carousel Full-bleed Mobile */
+    /* Hero Carousel Mobile */
     .hero-carousel {
-        height: 75vh;
-        min-height: 500px;
+        height: auto;
+        min-height: 520px;
+        padding: 5rem 0 3rem 0;
     }
     
     .hero-slide {
@@ -1575,21 +1614,23 @@ a {
     }
     
     .hero-slide-content {
-        padding-left: 5%;
-        padding-right: 5%;
+        padding-left: 4%;
+        padding-right: 4%;
         justify-content: center;
         align-items: center;
         text-align: center;
     }
     
     .slide-title {
-        font-size: 2.2rem !important;
-        margin-bottom: 1.5rem;
+        font-size: clamp(1.6rem, 5.5vw, 2.4rem) !important;
+        margin-bottom: 1.2rem;
+        line-height: 1.25;
     }
     
     .slide-description {
-        font-size: 1rem;
+        font-size: 0.95rem;
         margin-bottom: 2rem;
+        line-height: 1.6;
     }
     
     .hero-btn-group {
@@ -1601,8 +1642,8 @@ a {
     
     .hero-btn-group .btn {
         width: 100%;
-        max-width: 280px;
-        padding: 0.8rem 1.5rem;
+        max-width: 300px;
+        padding: 0.9rem 1.5rem;
     }
     
     .carousel-nav {
@@ -1617,89 +1658,56 @@ a {
         display: none;
     }
     
-    /* About Us Stacked */
-    .about-grid {
-        grid-template-columns: 1fr;
-        gap: 3rem;
+    /* Category Filter Tabs Scrollable */
+    .filter-tabs {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 0.8rem;
+        gap: 0.6rem;
+        justify-content: flex-start;
     }
     
-    .about-left {
-        position: relative;
-        top: 0;
+    .filter-btn {
+        flex-shrink: 0;
+        white-space: nowrap;
+        padding: 0.6rem 1.2rem;
+        font-size: 0.8rem;
     }
-    
-    .about-title {
-        font-size: 3rem;
-    }
-    
-    /* Partners Logo Grid Responsive */
+
+    /* Partners Logo Grid */
     .partners-logo-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem;
+        gap: 1.2rem;
     }
 
     .partner-logo-wrap {
-        height: 130px;
+        height: 140px;
     }
 
-    /* Reviews Grid Responsive */
+    /* Reviews Grid */
     .reviews-grid {
         grid-template-columns: 1fr;
     }
 
     .review-card {
-        padding: 2rem;
-    }
-
-    /* Product Grid */
-    .products-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem;
-    }
-    
-    /* Contact Grid Stacked */
-    .contact-grid {
-        grid-template-columns: 1fr;
-        gap: 3.5rem;
-    }
-    
-    .contact-title {
-        font-size: 2.8rem;
+        padding: 2rem 1.5rem;
     }
 
     .contact-form-wrapper {
-        padding: 2.5rem 1.5rem;
+        padding: 2rem 1.5rem;
     }
     
-    /* Footer Stacked */
-    .footer-grid {
-        grid-template-columns: 1fr;
-        gap: 3rem;
-        text-align: center;
-    }
-    
-    .footer-logo-img {
-        align-self: center;
-    }
-    
-    .footer-col-title::after {
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    
-    .footer-links a:hover {
-        transform: none;
-    }
-    
-    /* Modal Layouts Stacked */
+    /* Modals Stacked */
     .product-detail-layout {
         flex-direction: column;
-        gap: 2rem;
+        gap: 1.8rem;
     }
     
     .product-detail-img-box {
         width: 100%;
-        aspect-ratio: 4 / 3;
+        height: 250px;
     }
     
     .product-detail-info {
@@ -1707,7 +1715,49 @@ a {
     }
     
     .detail-title {
-        font-size: 2.2rem;
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --header-height: 65px;
+    }
+    
+    .logo-img {
+        height: 55px;
+    }
+    
+    .logo-box {
+        padding: 0 1rem;
+    }
+    
+    .section-heading {
+        font-size: 2.1rem;
+    }
+    
+    .products-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .partners-logo-grid {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+    
+    .partner-logo-wrap {
+        height: 150px;
+    }
+    
+    .contact-form-wrapper {
+        padding: 1.8rem 1.2rem;
+    }
+    
+    .whatsapp-btn,
+    .map-btn {
+        padding: 1.1rem 1.2rem;
+        font-size: 0.85rem;
     }
 }
 
