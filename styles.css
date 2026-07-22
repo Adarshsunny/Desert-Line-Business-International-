@@ -1604,13 +1604,19 @@ html, body {
     
     /* Hero Carousel Mobile */
     .hero-carousel {
-        height: auto;
+        height: 75vh;
         min-height: 520px;
-        padding: 5rem 0 3rem 0;
+        margin-top: var(--header-height);
+        padding: 0;
+        background-color: #111111;
     }
     
     .hero-slide {
         background-attachment: scroll;
+        background-color: #111111;
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
     }
     
     .hero-slide-content {
