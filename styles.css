@@ -225,11 +225,11 @@ a {
     position: relative;
     height: 90vh;
     min-height: 650px;
-    background-color: #0E0E0E;
+    background-color: var(--bg-light);
     margin-top: var(--header-height);
     display: flex;
     align-items: center;
-    border-bottom: 2px solid #222222;
+    border-bottom: 2px solid #EAEAEA;
 }
 
 /* Vertical Text "TOPICS" */
@@ -266,7 +266,6 @@ a {
     visibility: hidden;
     transition: opacity 0.6s ease, visibility 0.6s ease;
     z-index: 1;
-    background-color: #0E0E0E;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1607,16 +1606,25 @@ html, body {
     .hero-carousel {
         height: 75vh;
         min-height: 520px;
-        margin-top: var(--header-height);
         padding: 0;
-        background-color: #0E0E0E;
+        overflow: hidden;
     }
-    
+
+    .slides-container {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
     .hero-slide {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
         background-attachment: scroll;
-        background-color: #0E0E0E;
         background-size: cover !important;
-        background-position: center !important;
+        background-position: center center !important;
         background-repeat: no-repeat !important;
     }
     
