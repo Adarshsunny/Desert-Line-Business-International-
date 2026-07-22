@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#F6F6F6"/>
+  <!-- Ceiling T-Grid Metal Profile (Background) -->
+  <path d="M 25 35 L 175 35 M 100 35 L 100 85 M 70 85 L 130 85" stroke="#CCCCCC" stroke-width="8" stroke-linecap="round" fill="none"/>
+  <path d="M 25 35 L 175 35 M 100 35 L 100 85 M 70 85 L 130 85" stroke="#002D62" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <!-- Layered Gypsum Plasterboards (Isometric Stack) -->
+  <g transform="translate(100, 110)">
+    <!-- Bottom Board (Standard Gray/White) -->
+    <polygon points="-65,10 5,35 65,10 0,-15" fill="#FFFFFF" stroke="#002D62" stroke-width="4" stroke-linejoin="round"/>
+    <!-- Board side edge thicknesses -->
+    <polygon points="-65,10 5,35 5,45 -65,20" fill="#CCCCCC" stroke="#002D62" stroke-width="4" stroke-linejoin="round"/>
+    <polygon points="5,35 65,10 65,20 5,45" fill="#BBBBBB" stroke="#002D62" stroke-width="4" stroke-linejoin="round"/>
+
+    <!-- Middle Board (Moisture Resistant Green) -->
+    <g transform="translate(5, -18)">
+      <polygon points="-65,10 5,35 65,10 0,-15" fill="#A8E4A0" stroke="#002D62" stroke-width="4" stroke-linejoin="round"/>
+      <polygon points="-65,10 5,35 5,45 -65,20" fill="#88C480" stroke="#002D62" stroke-width="4" stroke-linejoin="round"/>
+      <polygon points="5,35 65,10 65,20 5,45" fill="#78B470" stroke="#002D62" stroke-width="4" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Top Board (Fire Rated Pink/Red) -->
+    <g transform="translate(10, -36)">
+      <polygon points="-65,10 5,35 65,10 0,-15" fill="#FFC0CB" stroke="#002D62" stroke-width="4" stroke-linejoin="round"/>
+      <polygon points="-65,10 5,35 5,45 -65,20" fill="#E8A0B0" stroke="#002D62" stroke-width="4" stroke-linejoin="round"/>
+      <polygon points="5,35 65,10 65,20 5,45" fill="#D890A0" stroke="#002D62" stroke-width="4" stroke-linejoin="round"/>
+      <!-- Sheet mark label -->
+      <polygon points="-15,5 15,15 25,10 -5,0" fill="#FF8C00"/>
+    </g>
+  </g>
+</svg>

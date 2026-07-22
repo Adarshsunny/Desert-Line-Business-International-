@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#F6F6F6"/>
+  <!-- Caulking / Adhesive Gun (Background layer) -->
+  <g transform="translate(10, 100) rotate(-15)">
+    <!-- Cartridge container -->
+    <rect x="25" y="-12" width="90" height="24" rx="2" fill="#FFFFFF" stroke="#002D62" stroke-width="4"/>
+    <!-- Nozzle tip -->
+    <polygon points="115,-8 135,-3 135,3 115,8" fill="#FF8C00" stroke="#002D62" stroke-width="3"/>
+    <!-- Handle -->
+    <path d="M 30 12 L 20 45 L 35 45 L 42 12 Z" fill="#002D62" stroke="#002D62" stroke-width="3" stroke-linejoin="round"/>
+    <!-- Trigger -->
+    <path d="M 28 15 C 22 15 22 30 28 30" fill="none" stroke="#FFC700" stroke-width="3" stroke-linecap="round"/>
+    <!-- Plunger Rod -->
+    <line x1="25" y1="0" x2="-5" y2="0" stroke="#002D62" stroke-width="5" stroke-linecap="round"/>
+    <rect x="-8" y="-8" width="5" height="16" rx="1" fill="#FF8C00" stroke="#002D62" stroke-width="2"/>
+    <!-- Flow bead -->
+    <path d="M 135 0 C 145 0 150 15 160 15 C 170 15 175 0 185 0" fill="none" stroke="#FFC700" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <!-- Chemistry Flask Container (Foreground) -->
+  <g transform="translate(115, 60)">
+    <!-- Flask neck -->
+    <rect x="22" y="5" width="16" height="30" fill="#FFFFFF" stroke="#002D62" stroke-width="5"/>
+    <rect x="18" y="0" width="24" height="6" rx="2" fill="#FF8C00" stroke="#002D62" stroke-width="2"/>
+    <!-- Flask Body (Erlenmeyer) -->
+    <polygon points="30,30 5,80 55,80" fill="#FFFFFF" stroke="#002D62" stroke-width="6" stroke-linejoin="round"/>
+    <!-- Fluid level filling -->
+    <polygon points="12,65 48,65 52,76 8,76" fill="#002D62" opacity="0.9"/>
+    <!-- Bubbles -->
+    <circle cx="30" cy="50" r="4" fill="#FFC700" stroke="#002D62" stroke-width="1.5"/>
+    <circle cx="22" cy="60" r="3" fill="#FF8C00"/>
+    <circle cx="38" cy="58" r="2" fill="#002D62"/>
+  </g>
+</svg>

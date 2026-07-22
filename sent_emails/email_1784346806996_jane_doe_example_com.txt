@@ -1,0 +1,20 @@
+From: Desert Line Customer Relations <noreply@desertline.com>
+To: Jane Doe <jane.doe@example.com>
+Subject: Confirmation of your inquiry to Desert Line
+
+Dear Jane Doe,
+
+Thank you for reaching out to Desert Line Business International LLC. We have successfully received your message.
+
+Here is a copy of your submitted message for your records:
+--------------------------------------------------
+Testing contact form details update.
+--------------------------------------------------
+
+A representative from our team will review your inquiry and contact you shortly.
+
+Best regards,
+
+Customer Service Department
+Desert Line Business International LLC
+"Quality is Our Trust"

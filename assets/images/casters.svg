@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#F6F6F6"/>
+  <!-- Top Mounting Plate -->
+  <rect x="50" y="30" width="100" height="12" rx="2" fill="#002D62" stroke="#002D62" stroke-width="4"/>
+  <!-- Bolt holes in mounting plate -->
+  <circle cx="65" cy="36" r="3" fill="#FFC700"/>
+  <circle cx="135" cy="36" r="3" fill="#FFC700"/>
+  
+  <!-- Swivel Swivel Rig Fork / Bracket Assembly -->
+  <path d="M 100 42 L 100 56 L 68 95 L 68 128 L 84 128 L 84 105 L 115 65 L 115 42 Z" fill="#CCCCCC" stroke="#002D62" stroke-width="5" stroke-linejoin="round"/>
+  <circle cx="100" cy="49" r="6" fill="#FF8C00" stroke="#002D62" stroke-width="2"/>
+  
+  <!-- Brake Pedal (Heavy duty accent) -->
+  <path d="M 68 95 L 35 90 L 35 105 L 68 110" fill="#FF8C00" stroke="#002D62" stroke-width="4" stroke-linejoin="round"/>
+  <rect x="30" y="85" width="8" height="25" rx="1" fill="#FFC700" stroke="#002D62" stroke-width="2"/>
+  
+  <!-- Wheel Axle Bolt Center -->
+  <circle cx="108" cy="120" r="14" fill="#002D62" stroke="#002D62" stroke-width="2" z-index="5"/>
+  <circle cx="108" cy="120" r="6" fill="#FF8C00"/>
+  
+  <!-- Main Roller Wheel -->
+  <!-- Outer Tire Ring (Polyurethane Red/Orange) -->
+  <circle cx="108" cy="120" r="50" fill="none" stroke="#FF8C00" stroke-width="16" z-index="2"/>
+  <circle cx="108" cy="120" r="50" fill="none" stroke="#002D62" stroke-width="2" stroke-dasharray="10 6" z-index="3"/>
+  <!-- Inner Core Center Disc (Steel Hub) -->
+  <circle cx="108" cy="120" r="41" fill="none" stroke="#002D62" stroke-width="5"/>
+  <!-- Spoke ridges -->
+  <line x1="108" y1="80" x2="108" y2="160" stroke="#002D62" stroke-width="4"/>
+  <line x1="68" y1="120" x2="148" y2="120" stroke="#002D62" stroke-width="4"/>
+</svg>
